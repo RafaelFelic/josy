@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-  --main-font: "Abel", sans-serif;
+  --main-font: 'Abel', sans-serif;
   --main-color: #333;
   --secondary-color: #d3d3d3;
   --white-color: #fff;
@@ -112,7 +112,7 @@ img {
 .hamburger .bar,
 .hamburger:after,
 .hamburger:before {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 3px;
@@ -292,13 +292,13 @@ img {
   width: 100%;
   justify-content: center;
   gap: 1em;
-  margin: 30px 0px 50px 0px;
+  margin: 30px 0px 40px 0px;
 }
 
 #contact input {
   width: 500px;
   padding: 15px;
-  font-family: "Abel", sans-serif;
+  font-family: 'Abel', sans-serif;
   font-size: 1em;
   border: 1px solid rgba(192, 192, 192, 0.8);
 }
@@ -333,7 +333,7 @@ footer {
   position: relative;
   margin-bottom: 5px;
   width: 100%;
-  height: 400px;
+  height: 320px;
   overflow: hidden;
   background-color: #333;
 }
@@ -599,41 +599,6 @@ img.lazyloaded {
   width: 80%;
   text-align: left;
 }
-
-/* 
-.portfolio {
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.img-thumb,
-.img-thumb2 {
-  margin: 15px;
-  width: 317px;
-  height: 212px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.img-thumb2 {
-  align-items: start;
-}
-
-.img-thumb img,
-.img-thumb2 img {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.img-thumb img.loaded,
-.img-thumb2 img.loaded {
-  opacity: 1;
-} */
 
 .shop {
   position: relative;
