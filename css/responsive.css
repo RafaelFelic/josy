@@ -7,6 +7,12 @@
   object-fit: cover;
 }
 
+@media screen and (max-width: 414px) {
+  .text {
+    margin: 20px 75px !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .portfolio {
     justify-content: space-evenly;
@@ -33,10 +39,6 @@
 @media screen and (min-width: 769px) {
   .nav-menu {
     display: flex; /* Ensure normal menu is visible on larger screens */
-  }
-
-  .carousel-image {
-    height: 300px;
   }
 }
 
@@ -73,7 +75,7 @@
   }
 
   .carousel-image {
-    height: 350px;
+    height: 320px;
   }
 
   .btn {
