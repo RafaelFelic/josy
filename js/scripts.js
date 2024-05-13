@@ -238,14 +238,14 @@ swiperContainer.addEventListener('click', function (event) {
   }
 });
 
-document.querySelectorAll("[class^='img-thumb'] img").forEach((img) => {
-  function onLoad() {
-    img.classList.add('loaded');
-  }
+// document.querySelectorAll("[class^='img-thumb'] img").forEach((img) => {
+//   function onLoad() {
+//     img.classList.add('loaded');
+//   }
 
-  if (img.complete) {
-    onLoad();
-  } else {
-    img.addEventListener('load', onLoad);
-  }
-});
+//   if (img.complete) {
+//     onLoad();
+//   } else {
+//     img.addEventListener('load', onLoad);
+//   }
+// });
