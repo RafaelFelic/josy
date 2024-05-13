@@ -1,0 +1,146 @@
+.hamburger {
+  display: none;
+}
+
+.carousel-image {
+  width: 100%; /* Assuming you want this globally */
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    justify-content: space-evenly;
+  }
+
+  .img-thumb,
+  .img-thumb2 {
+    margin: 5px;
+    width: 170px;
+    height: 117px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .product img {
+    width: 350px;
+    height: 234px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav-menu {
+    display: flex; /* Ensure normal menu is visible on larger screens */
+  }
+
+  .carousel-image {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block; /* Only show on small screens */
+  }
+
+  .nav-menu {
+    display: none; /* Hide normal menu on small screens */
+  }
+
+  #navbar ul li {
+    display: none;
+  }
+
+  #contact form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .carousel-control {
+    padding: 10px;
+  }
+
+  .carousel-text h2,
+  .carousel-text p {
+    display: none;
+  }
+
+  .text {
+    display: block;
+    margin: 105px 75px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .gallery-title,
+  .gallery-title2 {
+    position: absolute;
+    top: 10px;
+    font-size: 25px;
+  }
+
+  .gallery-item {
+    height: 200px;
+  }
+
+  .about p {
+    margin: 20px;
+  }
+
+  .about .josy {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group .input-control {
+    margin-top: 2px;
+    width: 100%;
+  }
+
+  .form-group label.right-inline {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .shopping {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .shopping img {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 932px) {
+  .carousel-image {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .cont img {
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .carousel-image {
+    /* width: 100%; */
+    height: 1190px;
+    /* object-fit: cover; */
+  }
+}

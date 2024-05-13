@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSaltyLens | Professional Photographer</title>
+    <link rel="preload" href="img/1.jpg" as="image" />
+    <link rel="preload" href="img/signature.png" as="image" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/signature.png" type="image/png" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul class="navbar-list">
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="gallery.html">Portfolio</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <span class="logo">
+            <a href="index.html"><img src="img/signature.png" /></a>
+          </span>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Portfolio</a>
+        <a href="shop.html">Shop</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div id="carousel">
+        <div class="carousel-images">
+          <img class="carousel-image active fade-in" src="img/1.jpg" />
+          <img class="carousel-image" src="img/2.jpg" />
+          <img class="carousel-image" src="img/3.jpg" />
+          <img class="carousel-image" src="img/4.jpg" />
+          <img class="carousel-image" src="img/5.jpg" />
+          <img class="carousel-image" src="img/6.jpg" />
+          <img class="carousel-image" src="img/7.jpg" />
+          <img class="carousel-image" src="img/8.jpg" />
+          <img class="carousel-image" src="img/9.jpg" />
+          <img class="carousel-image" src="img/10.jpg" />
+        </div>
+        <button id="prev" class="carousel-control" aria-label="Previous slide">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="next" class="carousel-control" aria-label="Next slide">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div id="indicator">
+          <div class="indicator-dot active"></div>
+          <div class="indicator-dot"></div>
+          <div class="indicator-dot"></div>
+          <div class="indicator-dot"></div>
+          <div class="indicator-dot"></div>
+          <div class="indicator-dot"></div>
+          <div class="indicator-dot"></div>
+          <div class="indicator-dot"></div>
+          <div class="indicator-dot"></div>
+          <div class="indicator-dot"></div>
+        </div>
+        <div class="carousel-text">
+          <h2>STYLISH PHOTOGRAPHY & ART PRINTS</h2>
+          <p class="lead">
+            Fine art prints showcasing lifestyle, surf, and beach culture. Based
+            in Noosa, QLD, Australia.
+          </p>
+          <a href="shop.html" class="btn">SHOP NOW</a>
+        </div>
+      </div>
+    </header>
+    <div class="text">
+      <h2>STYLISH PHOTOGRAPHY & ART PRINTS</h2>
+      <p class="lead">
+        Fine art prints showcasing lifestyle, surf, and beach culture. Based in
+        Noosa, QLD, Australia.
+      </p>
+    </div>
+    <section id="contact">
+      <p>Join The Newsletter</p>
+      <form id="newsletter-form">
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="First Name"
+          aria-label="First Name"
+          required
+        />
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Last Name"
+          aria-label="Last Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+          aria-label="Email Address"
+          required
+        />
+        <input class="btn2" type="submit" value="SIGN UP" />
+      </form>
+      <div class="social">
+        <a
+          href="https://www.instagram.com/saltlens.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/josyMnz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="mailto:joymnz.shoot@gmail.com">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+    <footer class="home">
+      <p> Copyright &copy; JSaltyLens 2023</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="subscribe/form.js"></script>
+  </body>
+</html>

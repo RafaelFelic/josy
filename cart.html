@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSaltyLens | Professional Photographer</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/signature.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul class="navbar-list">
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="gallery.html">Portfolio</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <span class="logo">
+            <a href="index.html"
+              ><img src="img/signature.png"
+            /></a>
+          </span>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">
+       <div class="bar"></div>
+     </button>     
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Portfolio</a>
+      <a href="shop.html">Shop</a>
+      <a href="faq.html">FAQ</a></li>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+      <div class="cartMenu">
+        <a href="cart.html" style="color: #40dbc1"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+      </div>
+    </header>
+    <div class="cart">
+      <div class="title">
+        <h1>SHOPPING CART</h1>
+        <hr />
+      </div>
+      <table id="cart">
+        <tr>
+          <th>Product</th>
+          <th>Image</th>
+          <th>Framing</th>
+          <th>Size</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+        <!-- Cart items will go here -->
+      </table>
+      <div id="totalPrice"></div>
+    </div>
+    <section id="contact">
+      <p>Join The Newsletter</p>
+      <form id="newsletter-form">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+          aria-label="Email Address"
+          required
+        />
+        <input class="btn2" type="submit" value="SIGN UP" />
+      </form>
+      <div class="social">
+        <a
+          href="https://www.instagram.com/saltlens.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/saltlens.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="mailto:youremail@example.com"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+    </section>
+    <footer>
+      <p>
+        2023 &copy;
+        <a href="mailto:rafaelfelic@gmail.com">Rafael Feliciano</a>. Inovating
+        solutions
+      </p>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSaltyLens | Professional Photographer</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/signature.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul class="navbar-list">
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="gallery.html">Portfolio</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <span class="logo">
+            <a href="index.html"
+              ><img src="img/signature.png"
+            /></a>
+          </span>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">
+       <div class="bar"></div>
+     </button>     
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Portfolio</a>
+      <a href="shop.html">Shop</a>
+      <a href="faq.html">FAQ</a></li>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+      <div class="cartMenu">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </header>
+    <div class="title">
+      <h1>CHECKOUT</h1>
+      <hr />
+    </div>
+    <div class="checkout">
+      <div class="form">
+        <form>
+          <h2>Contact</h2>
+          <input
+            type="text"
+            id="email-phone"
+            placeholder="Email or mobile phone number"
+          />
+          <input type="checkbox" id="email-news" />
+          <label for="email-news">Email me with news and offers</label>
+
+          <h2>Delivery</h2>
+          <select class="country">
+            <option selected disabled>Country/Region</option>
+            <option value="australia">Australia</option>
+            <option value="brazil">Brazil</option>
+            <option value="canada">Canada</option>
+          </select>
+          <input type="text" id="first-name" placeholder="First Name" />
+          <input type="text" id="last-name" placeholder="Last Name" />
+          <input type="text" id="address" placeholder="Address" />
+          <input
+            type="text"
+            id="apartment"
+            placeholder="Add apartment, suite, etc."
+          />
+          <input type="text" id="city" placeholder="City" />
+          <input type="text" id="postcode" placeholder="Postcode" />
+          <!-- Add a shipping method selection component here -->
+
+          <h2>Payment</h2>
+          <p>All transactions are secure and encrypted.</p>
+          <!-- Add a payment method selection component here -->
+          <input type="checkbox" id="same-as-shipping" />
+          <label for="same-as-shipping"
+            >Use shipping address as billing address</label
+          >
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+          <input type="checkbox" id="save-info" />
+          <label for="save-info"
+            >Save my information for a faster checkout</label
+          >
+
+          <button type="submit" id="pay-now">Pay Now</button>
+        </form>
+      </div>
+      <div class="product-list">
+        <h1>Your Cart</h1>
+        <div class="product">
+          <h2>Product 1</h2>
+          <p>$10.00</p>
+        </div>
+        <div class="product">
+          <h2>Product 2</h2>
+          <p>$15.00</p>
+        </div>
+        <h2>Subtotal: $25.00</h2>
+      </div>
+    </div>
+    <section id="contact">
+      <p>Join The Newsletter</p>
+      <form action="">
+        <input
+          type="email"
+          placeholder="Email Address"
+          aria-label="Email Address"
+        />
+        <button class="btn2">SIGN UP</button>
+      </form>
+      <div class="social">
+        <a
+          href="https://www.instagram.com/saltlens.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/saltlens.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="mailto:youremail@example.com"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+    </section>
+    <footer>
+      <p>
+        2023 &copy;
+        <a href="mailto:rafaelfelic@gmail.com">Rafael Feliciano</a>. Inovating
+        solutions
+      </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

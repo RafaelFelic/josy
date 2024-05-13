@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSaltyLens | Professional Photographer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/signature.png" type="image/png" />
+  </head>
+  <body>
+    <script src="js/cart.js"></script>
+    <header>
+      <nav id="navbar">
+        <ul class="navbar-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Portfolio</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <span class="logo">
+            <a href="index.html"><img src="img/signature.png" /></a>
+          </span>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a class="current" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Portfolio</a>
+        <a href="shop.html">Shop</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div class="about">
+      <img id="foto" src="img/about.jpg" alt="" />
+      <div class="title">
+        <h1>BEHIND THE LENS</h1>
+        <hr />
+      </div>
+      <p>
+        Hello, I'm Josy, a passionate photographer originally from Brazil and
+        currently based in the beautiful coastal town of Noosa, QLD, Australia.
+        I have a deep appreciation for the ocean, surfing, beaches,
+        skateboarding and the vibrant coastal lifestyle that surrounds me.
+        Photography has always been my way of capturing the world's breathtaking
+        moments. I love immersing myself in different cultures and seeking out
+        unique experiences to capture through my lens. Whether it's the raw
+        power of crashing waves, a radical manouver, the serene beauty of golden
+        sunsets, or the authentic expressions of people, I strive to encapsulate
+        the essence of life in my photographs. Living in Noosa has been a dream
+        come true, as it offers an incredible blend of nature and culture. The
+        stunning beaches, the relaxed lifestyle, and the vibrant surf community
+        all provide endless inspiration for my work. I believe that photography
+        has the power to evoke emotions, tell stories, and inspire others. It's
+        a way for me to share my passion and perspective with the world. Through
+        my images, I aim to transport viewers to the very moments I capture and
+        evoke a sense of connection and appreciation for the beauty that
+        surrounds us. Thank you for joining me on this visual journey, and I
+        hope my photography can bring you a glimpse of the joy and wonder I find
+        in the world.
+      </p>
+      <p>Cheers,</p>
+      <img class="logo" src="img/signature.png" alt="Logo" />
+      <img class="josy" src="img/josy.jpeg" alt="Josy" />
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <button data-close-button class="close-button">&times;</button>
+      <div id="swiper-container" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- Overlay -->
+    <div id="overlay"></div>
+    <section id="contact">
+      <p>Join The Newsletter</p>
+      <form id="newsletter-form">
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="First Name"
+          aria-label="First Name"
+          required
+        />
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Last Name"
+          aria-label="Last Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+          aria-label="Email Address"
+          required
+        />
+        <input class="btn2" type="submit" value="SIGN UP" />
+      </form>
+      <div class="social">
+        <a
+          href="https://www.instagram.com/saltlens.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/josyMnz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="mailto:joymnz.shoot@gmail.com">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+    <footer class="home">
+      <p> Copyright &copy; JSaltyLens 2023</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
