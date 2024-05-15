@@ -331,10 +331,8 @@ footer {
 
 .gallery-item {
   position: relative;
-  margin-bottom: 5px;
   width: 100%;
-  height: 320px;
-  overflow: hidden;
+  height: 290px;
   background-color: #333;
 }
 
@@ -371,17 +369,17 @@ footer {
 }
 
 .portfolio {
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .img-thumb,
 .img-thumb2 {
   margin: 15px;
-  width: 317px;
-  height: 212px;
+  width: 300px;
+  height: 200px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -558,7 +556,7 @@ img.lazyloaded {
   width: 100%;
   object-fit: cover;
   object-position: top;
-  height: 600px;
+  height: 530px;
 }
 
 .about p {
@@ -601,19 +599,18 @@ img.lazyloaded {
 }
 
 .shop {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  /* gap: 20px; */
+  justify-content: space-evenly;
   overflow: hidden;
 }
 
 .shop img {
-  width: 317px;
-  height: 212px;
-  justify-content: center;
-  align-items: center;
+  width: 300px;
+  height: 200px;
+  /* justify-content: center; */
+  /* align-items: center; */
   object-fit: cover;
 }
 
@@ -765,11 +762,7 @@ img.lazyloaded {
 }
 
 .product {
-  margin-bottom: 10px;
-}
-
-.product h2 {
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .shopping {

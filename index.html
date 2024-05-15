@@ -21,7 +21,6 @@
     />
     <link rel="icon" href="img/signature.png" type="image/png" />
   </head>
-
   <body>
     <header>
       <nav id="navbar">
@@ -30,14 +29,16 @@
           <li><a href="gallery.html">Portfolio</a></li>
           <li><a href="shop.html">Shop</a></li>
           <span class="logo">
-            <a href="index.html"><img src="img/signature.png" /></a>
+            <a href="index.html"
+              ><img src="img/signature.png" alt="JSaltyLens Logo"
+            /></a>
           </span>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button class="hamburger">
+      <button class="hamburger" aria-label="Menu">
         <div class="bar"></div>
       </button>
       <nav class="mobile-nav">
@@ -50,16 +51,24 @@
       </nav>
       <div id="carousel">
         <div class="carousel-images">
-          <img class="carousel-image active fade-in" src="img/1.jpg" />
-          <img class="carousel-image" src="img/2.jpg" />
-          <img class="carousel-image" src="img/3.jpg" />
-          <img class="carousel-image" src="img/4.jpg" />
-          <img class="carousel-image" src="img/5.jpg" />
-          <img class="carousel-image" src="img/6.jpg" />
-          <img class="carousel-image" src="img/7.jpg" />
-          <img class="carousel-image" src="img/8.jpg" />
-          <img class="carousel-image" src="img/9.jpg" />
-          <img class="carousel-image" src="img/10.jpg" />
+          <img
+            class="carousel-image active fade-in"
+            src="img/1.jpg"
+            alt="Carousel Image 1"
+          />
+          <img class="carousel-image" src="img/2.jpg" alt="Carousel Image 2" />
+          <img class="carousel-image" src="img/3.jpg" alt="Carousel Image 3" />
+          <img class="carousel-image" src="img/4.jpg" alt="Carousel Image 4" />
+          <img class="carousel-image" src="img/5.jpg" alt="Carousel Image 5" />
+          <img class="carousel-image" src="img/6.jpg" alt="Carousel Image 6" />
+          <img class="carousel-image" src="img/7.jpg" alt="Carousel Image 7" />
+          <img class="carousel-image" src="img/8.jpg" alt="Carousel Image 8" />
+          <img class="carousel-image" src="img/9.jpg" alt="Carousel Image 9" />
+          <img
+            class="carousel-image"
+            src="img/10.jpg"
+            alt="Carousel Image 10"
+          />
         </div>
         <button id="prev" class="carousel-control" aria-label="Previous slide">
           <i class="fas fa-chevron-left"></i>
@@ -81,70 +90,74 @@
         </div>
         <div class="carousel-text">
           <h2>STYLISH PHOTOGRAPHY & ART PRINTS</h2>
-          <p class="lead">
-            Fine art prints showcasing lifestyle, surf, and beach culture. Based
-            in Noosa, QLD, Australia.
-          </p>
+          <p class="lead"
+            >Fine art prints showcasing lifestyle, surf, and beach culture.
+            Based in Noosa, QLD, Australia.</p
+          >
           <a href="shop.html" class="btn">SHOP NOW</a>
         </div>
       </div>
     </header>
-    <div class="text">
-      <h2>STYLISH PHOTOGRAPHY & ART PRINTS</h2>
-      <p class="lead">
-        Fine art prints showcasing lifestyle, surf, and beach culture. Based in
-        Noosa, QLD, Australia.
-      </p>
-    </div>
-    <section id="contact">
-      <p>Join The Newsletter</p>
-      <form id="newsletter-form">
-        <input
-          type="text"
-          id="first-name"
-          name="first-name"
-          placeholder="First Name"
-          aria-label="First Name"
-          required
-        />
-        <input
-          type="text"
-          id="last-name"
-          name="last-name"
-          placeholder="Last Name"
-          aria-label="Last Name"
-          required
-        />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email Address"
-          aria-label="Email Address"
-          required
-        />
-        <input class="btn2" type="submit" value="SIGN UP" />
-      </form>
-      <div class="social">
-        <a
-          href="https://www.instagram.com/saltlens.co/"
-          target="_blank"
-          rel="noopener noreferrer"
+    <main>
+      <div class="text">
+        <h2>STYLISH PHOTOGRAPHY & ART PRINTS</h2>
+        <p class="lead"
+          >Fine art prints showcasing lifestyle, surf, and beach culture. Based
+          in Noosa, QLD, Australia.</p
         >
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a
-          href="https://www.facebook.com/josyMnz/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="mailto:joymnz.shoot@gmail.com">
-          <i class="fa-regular fa-envelope"></i>
-        </a>
       </div>
-    </section>
+      <section id="contact">
+        <p>Join The Newsletter</p>
+        <form id="newsletter-form">
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="First Name"
+            aria-label="First Name"
+            required
+          />
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Last Name"
+            aria-label="Last Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            aria-label="Email Address"
+            required
+          />
+          <input class="btn2" type="submit" value="SIGN UP" />
+        </form>
+        <div class="social">
+          <a
+            href="https://www.instagram.com/saltlens.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/josyMnz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="mailto:joymnz.shoot@gmail.com" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </section>
+    </main>
     <footer class="home">
       <p> Copyright &copy; JSaltyLens 2023</p>
     </footer>

@@ -1,3 +1,4 @@
+/* Default Styles */
 .hamburger {
   display: none;
 }
@@ -7,20 +8,25 @@
   object-fit: cover;
 }
 
+/* Mobile Styles */
 @media screen and (max-width: 414px) {
   .text {
     margin: 20px 75px !important;
   }
+
+  .gallery-item {
+    height: 180px !important;
+  }
+
+  .cont img {
+    height: 550px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .portfolio {
-    justify-content: space-evenly;
-  }
-
   .img-thumb,
   .img-thumb2 {
-    margin: 5px;
+    margin: 3px;
     width: 170px;
     height: 117px;
   }
@@ -33,12 +39,6 @@
   .product img {
     width: 350px;
     height: 234px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .nav-menu {
-    display: flex; /* Ensure normal menu is visible on larger screens */
   }
 }
 
@@ -90,7 +90,7 @@
   }
 
   .gallery-item {
-    height: 200px;
+    height: 220px;
   }
 
   .about p {
@@ -101,6 +101,14 @@
     display: block;
     margin: auto;
     max-width: 300px;
+  }
+
+  .about #foto {
+    height: 650px;
+  }
+
+  .cont img {
+    height: 650px;
   }
 
   .form-group {
@@ -123,9 +131,17 @@
     flex-wrap: wrap;
     width: 100%;
   }
+
   .shopping img {
     max-width: 90%;
     margin: auto;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 769px) {
+  .nav-menu {
+    display: flex; /* Ensure normal menu is visible on larger screens */
   }
 }
 
@@ -135,16 +151,35 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+/* Desktop Styles */
+@media screen and (min-width: 1300px) {
   .cont img {
-    width: 100%;
-    object-fit: cover;
-    height: 700px;
+    height: 540px;
+  }
+
+  .carousel-image {
+    height: 550px;
+  }
+
+  .gallery-item {
+    height: 180px;
   }
 }
 
 @media screen and (min-width: 1500px) {
   .carousel-image {
-    height: 830px;
+    height: 850px;
+  }
+
+  .gallery-item {
+    height: 290px;
+  }
+
+  .about #foto {
+    height: 700px;
+  }
+
+  .cont img {
+    height: 850px;
   }
 }

@@ -57,7 +57,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/jungle.jpg"
-            alt="Imagem 3"
+            alt="Palm Paradise"
           />
         </a>
         <p>Palm Paradise</p>
@@ -65,7 +65,11 @@
       </div>
       <div class="product">
         <a href="">
-          <img class="lazyload" src="img/thumbs/shop/whale2.jpg" alt="Imagem 9"
+          <img
+            class="lazyload"
+            src="img/thumbs/shop/whale2.jpg"
+            alt="Ocean's Embrace"
+          />
         </a>
         <p>Ocean's Embrace</p>
         <p>From $110.00 AUD</p>
@@ -75,7 +79,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/branch.jpg"
-            alt="Imagem 1"
+            alt="Nature's Vein"
           />
         </a>
         <p>Nature's Vein</p>
@@ -86,7 +90,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/sunset3.jpg"
-            alt="Imagem 2"
+            alt="Fiery Horizon"
           />
         </a>
         <p>Fiery Horizon</p>
@@ -97,7 +101,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/sunset.jpg"
-            alt="Imagem 4"
+            alt="Embers of the Day"
           />
         </a>
         <p>Embers of the Day</p>
@@ -108,7 +112,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/stingray.jpg"
-            alt="Imagem 5"
+            alt="Stingray Mirage"
           />
         </a>
         <p>Stingray Mirage</p>
@@ -119,7 +123,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/pbsurf.jpg"
-            alt="Imagem 6"
+            alt="Eternal Surf"
           />
         </a>
         <p>Eternal Surf</p>
@@ -127,7 +131,11 @@
       </div>
       <div class="product">
         <a href="">
-          <img class="lazyload" src="img/thumbs/shop/blue.jpg" alt="Imagem 7" />
+          <img
+            class="lazyload"
+            src="img/thumbs/shop/blue.jpg"
+            alt="Island in the Blue"
+          />
         </a>
         <p>Island in the Blue</p>
         <p>From $110.00 AUD</p>
@@ -137,7 +145,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/boards.jpg"
-            alt="Imagem 8"
+            alt="Endless Summer"
           />
         </a>
         <p>Endless Summer</p>
@@ -148,7 +156,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/boom.jpg"
-            alt="Imagem 10"
+            alt="Sea's Clap"
           />
         </a>
         <p>Sea's Clap</p>
@@ -156,11 +164,7 @@
       </div>
       <div class="product">
         <a href="">
-          <img
-            class="lazyload"
-            src="img/thumbs/shop/jump.jpg"
-            alt="Imagem 11"
-          />
+          <img class="lazyload" src="img/thumbs/shop/jump.jpg" alt="Momentum" />
         </a>
         <p>Momentum</p>
         <p>From $110.00 AUD</p>
@@ -170,7 +174,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/mermaid.jpg"
-            alt="Imagem 12"
+            alt="Mermaid's Dream"
           />
         </a>
         <p>Mermaid's Dream</p>
@@ -181,7 +185,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/national.jpg"
-            alt="Imagem 13"
+            alt="Calm Seas Cruiser"
           />
         </a>
         <p>Calm Seas Cruiser</p>
@@ -192,7 +196,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/pbsurf2.jpg"
-            alt="Imagem 14"
+            alt="Dance On Waves"
           />
         </a>
         <p>Dance On Waves</p>
@@ -203,7 +207,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/shade.jpg"
-            alt="Imagem 15"
+            alt="Sea's Secret"
           />
         </a>
         <p>Sea's Secret</p>
@@ -214,7 +218,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/sunset2.jpg"
-            alt="Imagem 15"
+            alt="Day's Final Flame"
           />
         </a>
         <p>Day's Final Flame</p>
@@ -225,7 +229,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/vila.jpg"
-            alt="Imagem 15"
+            alt="Sea of Silence"
           />
         </a>
         <p>Sea of Silence</p>
@@ -236,7 +240,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/whales.jpg"
-            alt="Imagem 15"
+            alt="Deep Sea Ballet"
           />
         </a>
         <p>Deep Sea Ballet</p>
@@ -247,7 +251,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/bridge.jpg"
-            alt="Imagem 15"
+            alt="Sculpted by Time"
           />
         </a>
         <p>Sculpted by Time</p>
@@ -258,7 +262,7 @@
           <img
             class="lazyload"
             src="img/thumbs/shop/jungle2.jpg"
-            alt="Imagem 15"
+            alt="Green Haven"
           />
         </a>
         <p>Green Haven</p>
@@ -318,6 +322,19 @@
       <p> Copyright &copy; JSaltyLens 2023</p>
     </footer>
     <script src="js/scripts.js"></script>
+    <script>
+      // JavaScript to display "Shopify is deactivated" message
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const productLinks = document.querySelectorAll('.product a');
+        productLinks.forEach((link) => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Shopify is deactivated');
+          });
+        });
+      });
+    </script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
       async
