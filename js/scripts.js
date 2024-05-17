@@ -1,8 +1,9 @@
-// CAROUSEL
+// Constants
 const TRANSITION_TIME = 800; // in milliseconds
 const SLIDE_INTERVAL = 6000; // in milliseconds
 const MOBILE_BREAKPOINT = 768; // in pixels
 
+// Carousel Initialization
 document.addEventListener('DOMContentLoaded', function () {
   // Initialize Variables
   let slides = Array.from(document.querySelectorAll('#carousel img'));
@@ -58,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Event Listeners for Dots
   dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
+      if (transitioning) return;
+      transitioning = true;
       fadeOutSlide(currentIndex);
       currentIndex = index;
       fadeInSlide(currentIndex);
@@ -95,19 +98,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// NAVBAR
-// Selectors
+// Navbar Toggle Menu
 const menuButton = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-nav');
 const bodyElement = document.body;
 
 // Toggle Menu Functionality
 const toggleMenu = () => {
-  // Toggle overflow style on the body element to prevent or allow scrolling
   bodyElement.style.overflow =
     bodyElement.style.overflow !== 'hidden' ? 'hidden' : '';
-
-  // Toggle active class for menu button and mobile menu for open/close effect
   menuButton.classList.toggle('is-active');
   mobileMenu.classList.toggle('is-active');
 };
@@ -115,7 +114,7 @@ const toggleMenu = () => {
 // Event Listener for Menu Button Click
 menuButton.addEventListener('click', toggleMenu);
 
-// MODAL
+// Modal and Swiper Initialization
 let swiper = null;
 const overlay = document.getElementById('overlay');
 const closeModalButton = document.querySelector('[data-close-button]');
@@ -126,21 +125,17 @@ const images = document.querySelectorAll("[class^='img-thumb'] img");
 
 openModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    // document.body.style.overflow = 'hidden';
     swiperWrapper.innerHTML = '';
 
     const imageIndex = parseInt(button.getAttribute('data-index'));
-    const galleryType = button.getAttribute('data-gallery'); // Get gallery type (women, scapes, waves)
+    const galleryType = button.getAttribute('data-gallery');
 
-    // Filter images by the same gallery type
     const filteredImages = Array.from(images).filter(
       (img) => img.getAttribute('data-gallery') === galleryType
     );
 
-    // Prepare promises to track image loads
     let imageLoadPromises = [];
 
-    // Build the array of images in the correct order for the swiper
     const allImages = [
       filteredImages[imageIndex],
       ...filteredImages.slice(imageIndex + 1),
@@ -151,8 +146,8 @@ openModalButtons.forEach((button) => {
       const swiperSlide = document.createElement('div');
       swiperSlide.classList.add('swiper-slide');
       const imgClone = img.cloneNode(true);
-      imgClone.src = img.getAttribute('data-highres'); // Use high-resolution image
-      imgClone.style.display = 'block'; // Ensure the image is displayed correctly
+      imgClone.src = img.getAttribute('data-highres');
+      imgClone.style.display = 'block';
 
       const loadPromise = new Promise((resolve) => {
         imgClone.onload = resolve;
@@ -163,12 +158,11 @@ openModalButtons.forEach((button) => {
       swiperWrapper.appendChild(swiperSlide);
     });
 
-    // Wait for all images to load before initializing/updating Swiper
     Promise.all(imageLoadPromises).then(() => {
       if (!swiper) {
         swiper = new Swiper('.swiper-container', {
           direction: 'horizontal',
-          loop: false,
+          loop: true,
           effect: 'fade',
           fadeEffect: {
             crossFade: true,
@@ -188,28 +182,28 @@ openModalButtons.forEach((button) => {
   });
 });
 
-closeModalButton.addEventListener('click', () => {
-  document.body.style.overflow = 'auto';
+const closeModal = () => {
   modal.classList.remove('active');
   overlay.classList.remove('active');
   if (swiper) {
-    swiper.destroy(); // Proper cleanup when closing the modal
+    swiper.destroy();
     swiper = null;
   }
-});
+};
+
+closeModalButton.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
 
 const swiperContainer = document.querySelector('.swiper-container');
 
-swiperContainer.addEventListener('mousemove', function (event) {
-  const target = event.target;
+swiperContainer.addEventListener('mousemove', (event) => {
   const rect = swiperContainer.getBoundingClientRect();
-  const x = event.clientX - rect.left; // x position within the element.
+  const x = event.clientX - rect.left;
 
   if (
-    target.classList.contains('swiper-button-prev') ||
-    target.classList.contains('swiper-button-next')
+    event.target.classList.contains('swiper-button-prev') ||
+    event.target.classList.contains('swiper-button-next')
   ) {
-    // Se o mouse está sobre uma das setas, não alterar a opacidade
     return;
   }
 
@@ -222,14 +216,14 @@ swiperContainer.addEventListener('mousemove', function (event) {
   }
 });
 
-swiperContainer.addEventListener('mouseleave', function () {
+swiperContainer.addEventListener('mouseleave', () => {
   document.querySelector('.swiper-button-next').style.opacity = 0;
   document.querySelector('.swiper-button-prev').style.opacity = 0;
 });
 
-swiperContainer.addEventListener('click', function (event) {
+swiperContainer.addEventListener('click', (event) => {
   const rect = event.target.getBoundingClientRect();
-  const x = event.clientX - rect.left; // x position within the element.
+  const x = event.clientX - rect.left;
 
   if (x < rect.width / 2) {
     swiper.slidePrev();
@@ -237,15 +231,3 @@ swiperContainer.addEventListener('click', function (event) {
     swiper.slideNext();
   }
 });
-
-// document.querySelectorAll("[class^='img-thumb'] img").forEach((img) => {
-//   function onLoad() {
-//     img.classList.add('loaded');
-//   }
-
-//   if (img.complete) {
-//     onLoad();
-//   } else {
-//     img.addEventListener('load', onLoad);
-//   }
-// });

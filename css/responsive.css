@@ -4,18 +4,20 @@
 }
 
 .carousel-image {
-  width: 100%; /* Assuming you want this globally */
+  width: 100%;
   object-fit: cover;
 }
 
 /* Mobile Styles */
+@media (max-width: 414px) and (max-height: 700px) {
+  .gallery-item {
+    height: 180px !important;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .text {
     margin: 20px 75px !important;
-  }
-
-  .gallery-item {
-    height: 180px !important;
   }
 
   .cont img {
@@ -44,14 +46,14 @@
 
 @media screen and (max-width: 768px) {
   .hamburger {
-    display: block; /* Only show on small screens */
+    display: block;
   }
 
-  .nav-menu {
-    display: none; /* Hide normal menu on small screens */
-  }
-
-  #navbar ul li {
+  .nav-menu,
+  #navbar ul li,
+  .carousel-text h2,
+  .carousel-text p,
+  .btn {
     display: none;
   }
 
@@ -64,11 +66,6 @@
     padding: 10px;
   }
 
-  .carousel-text h2,
-  .carousel-text p {
-    display: none;
-  }
-
   .text {
     display: block;
     margin: 100px 75px;
@@ -76,10 +73,6 @@
 
   .carousel-image {
     height: 320px;
-  }
-
-  .btn {
-    display: none;
   }
 
   .gallery-title,
@@ -93,6 +86,10 @@
     height: 220px;
   }
 
+  .modal .close-button {
+    font-size: 3em;
+  }
+
   .about p {
     margin: 20px;
   }
@@ -103,10 +100,7 @@
     max-width: 300px;
   }
 
-  .about #foto {
-    height: 650px;
-  }
-
+  .about #foto,
   .cont img {
     height: 650px;
   }
@@ -141,7 +135,7 @@
 /* Tablet Styles */
 @media screen and (min-width: 769px) {
   .nav-menu {
-    display: flex; /* Ensure normal menu is visible on larger screens */
+    display: flex;
   }
 }
 
@@ -175,10 +169,7 @@
     height: 290px;
   }
 
-  .about #foto {
-    height: 700px;
-  }
-
+  .about #foto,
   .cont img {
     height: 850px;
   }
